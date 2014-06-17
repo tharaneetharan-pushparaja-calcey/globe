@@ -9,5 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+- (IBAction)saveButton:(id)sender;
+@property (weak, nonatomic) IBOutlet UITextField *nameInput;
+@property (weak, nonatomic) IBOutlet UITextField *phoneInput;
+@property (weak, nonatomic) IBOutlet UITextField *emailInput;
+@property (weak, nonatomic) IBOutlet UITextField *addressInput;
+@property (weak, nonatomic) IBOutlet UITextField *countryInput;
+@property (weak, nonatomic) IBOutlet UILabel *display;
 
 @end

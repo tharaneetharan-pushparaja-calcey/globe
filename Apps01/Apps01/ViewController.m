@@ -26,4 +26,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)saveButton:(id)sender {
+    [self.view endEditing:YES];
+    _display.text = [NSString stringWithFormat:@"%@ %@\n %@\n %@\n %@",_nameInput.text,_emailInput.text,_phoneInput.text,_addressInput.text,_countryInput.text];
+    NSLog(@"Hello");
+    
+}
+
+
 @end
